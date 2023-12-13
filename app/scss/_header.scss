@@ -1,0 +1,119 @@
+.header__inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+    gap: 4rem;
+}
+
+.menu__list-link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.menu__list-link--active {
+    color: #D4B160;
+}
+.header__info-phone {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.header__info-phone:hover{
+    color: #D4B160;
+    transition: all .4s ease-in;
+}
+.header__info-email:hover{
+    color: #fff;
+    transition: all .4s ease-in;
+}
+.header__info-email {
+    margin-left: 2rem;
+    display: block;
+    font-size: 1.4rem;
+    color: #D4B160;
+}
+
+
+//debst
+.debts-box {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/BG.jpg') no-repeat;
+    min-height: 71rem;
+    background-size: cover;
+    border-radius: 20px;
+}
+.debts-box__wrapper{
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 58rem;
+
+    border-radius: 20px;
+    border: 1.5px solid rgba(129, 129, 129, 0.80);
+    background: rgba(129, 129, 129, 0.20);
+    backdrop-filter: blur(20px);
+}
+
+.debts-box__title {
+    margin-bottom: 2.5rem;
+    font-size: 5.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Playfair';
+}
+.debts-box__text p{
+    margin-bottom: 1.5rem;
+}
+.debts-menu {
+    position: fixed;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 70rem;
+    padding: .8rem .8rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 15px;
+    background: rgba(129, 129, 129, 0.30);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+.debts-menu__list {
+    display: flex;
+    justify-content: center;
+}
+.debts-menu__list-item {
+    width: 19%;
+}
+.debts-menu__list-link--active{
+    border-radius: 10px;
+    background: rgba(129, 129, 129, 0.40);
+    backdrop-filter: blur(20px);
+    color: #D4B160;
+}
+.debts-menu__list-link {
+    padding: 1rem 2rem;
+    display: block;
+    text-align: center;  
+}
+.debts-menu__hide{
+    padding: 0;
+}
+.debts__mobile-btn{
+    display: none;
+}
+

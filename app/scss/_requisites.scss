@@ -1,0 +1,43 @@
+.requisites{
+    padding-top: 2rem;
+    padding-bottom: 13rem;
+}
+.requisites__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 71rem;
+    background: url('../images/requisites-bg.png') no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
+.requisites-block {
+    width: 69rem;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(129, 129, 129, 0.80);
+    background: rgba(129, 129, 129, 0.20);
+    backdrop-filter: blur(20px);
+}
+.requisites__title {
+    margin-bottom: 4rem;
+}
+.requisites-block__item {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.requisites-block__item-name {
+    display: block;
+    font-size: 1.6rem;
+    color: #B1B1B1;
+}
+.requisites-block__item-text {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+.email-btn__link {
+    position: fixed;
+    right: 15%;
+    top: 90%;
+}

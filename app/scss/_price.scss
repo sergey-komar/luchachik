@@ -1,0 +1,109 @@
+.price {
+    padding-top: 4rem;
+    padding-bottom: 15rem;
+    border-radius: 30px 30px 0px 0px;
+    border-top: 2px solid rgba(129, 129, 129, 0.60);
+}
+.price__title {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    text-align: left;
+    color: #D4B160;
+    border-bottom: 2px solid rgba(129, 129, 129, 0.60);
+}
+.price-block {
+    padding-bottom: 4rem;
+    margin-bottom: 8rem;
+    display: flex;
+    border-bottom: 2px solid rgba(129, 129, 129, 0.60);
+}
+.price-block__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.price-block__content {
+    width: 78rem;
+    margin-left: 3rem;
+}
+.price-block__content-text {
+    margin-bottom: 2rem;
+    color: #818181;
+    font-size: 2rem;
+}
+.price-block__content-info {
+    margin-bottom: 8rem;
+    font-size: 2rem;
+    color: #D4B160;
+}
+.price-block__content-title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.price-block__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.price-block__inner-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.4rem;
+    width: 48.5%;
+    color: #818181;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.60);
+}
+.price__subtitle {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #D4B160;
+}
+.price-box__item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.60);
+}
+.price-box__wrapper{
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+}
+.price-box__wrapper .price-box__item-text:first-child{
+    margin-left: 15rem;
+}
+.price-box__item:last-child{
+    margin-bottom: 8rem;
+}
+.price-box__item-text {
+    width: 33%;
+    font-size: 2rem;
+    color: #818181;
+}
+.price-box__item-text:last-child{
+    text-align: right;
+}
+// .price-box__item-text:nth-child(2){
+//    margin-left: 25rem;
+// }
+.price__services .price-box__item:last-child{
+    margin-bottom: 10rem;
+}
+
+.price-info {
+    width: 78rem;
+    margin-left: auto;
+}
+.price-info__title {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.price-info__text {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    color: #818181;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.60);
+}
+.price-info__text span{
+    color: #D4B160;
+}

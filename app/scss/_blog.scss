@@ -1,0 +1,112 @@
+.blog {
+    padding-top: 2rem;
+    padding-bottom: 15rem;
+}
+.blog-box {
+    margin-bottom: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 71rem;
+    background: url('../images/blog-bg.png') no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.blog-box__inner {
+   margin-bottom: 4rem;
+}
+.blog-menu {
+    position: fixed;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 70rem;
+    padding: .8rem .8rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 15px;
+    background: rgba(129, 129, 129, 0.30);
+    z-index: 2;
+}
+.blog-menu__list {
+    display: flex;
+    justify-content: center;
+}
+.blog-menu__list-item {
+    width: 19%;
+}
+.blog-menu__list-link {
+    padding: 1rem 2rem;
+    display: block;
+    text-align: center; 
+    font-size: 14px; 
+}
+.blog-menu__list-link--active{
+    border-radius: 10px;
+    background: rgba(129, 129, 129, 0.40);
+    backdrop-filter: blur(20px);
+    color: #D4B160;
+}
+.blog-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.blog-block__item {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1.5px solid rgba(129, 129, 129, 0.60);
+    background: rgba(129, 129, 129, 0.10);
+    backdrop-filter: blur(20px);
+}
+.blog-block__item-info {
+    width: max-content;
+    display: inline-block;
+    margin-bottom: 4rem;
+    padding: 1.6rem;
+    border-radius: 10px;
+    border: 1.5px solid rgba(129, 129, 129, 0.60);
+    background: rgba(129, 129, 129, 0.10);
+    backdrop-filter: blur(20px);
+
+
+    font-size: 14px;
+    text-align: center;
+    color: #D4B160;
+}
+.blog-block__item-title {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+.blog-block__item-date {
+    margin-bottom: 3rem;
+    color: #D4B160;
+}
+.blog-block__item-text {
+    margin-bottom: 6rem;
+    color: #818181;
+}
+.blog-block__item-btn {
+    margin-top: auto;
+    padding: 1.8rem 3rem;
+    width: 26rem;
+    border-radius: 10px;
+    border: 1.5px solid  #818181;
+
+
+    background: rgba(129, 129, 129, 0.10);
+    backdrop-filter: blur(20px);
+    text-transform: uppercase;
+    color: #F7F7FF;
+}
+.blog-block__item-btn:hover{
+    background:  #D4B160;
+    transition: all .4s ease-in;
+}

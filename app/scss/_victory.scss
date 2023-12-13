@@ -1,0 +1,57 @@
+.victory {
+    padding-top: 2rem;
+    padding-bottom: 15rem;
+}
+.victory-box {
+    margin-bottom: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 71rem;
+    background: url('../images/victory-bg.png') no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.victory-box__inner {
+    width: 58rem;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(129, 129, 129, 0.80);
+    background: rgba(129, 129, 129, 0.20);
+    backdrop-filter: blur(20px);
+}
+.victory-box__title {
+    margin-bottom: 2.5rem;
+}
+.victory-box__subtitle {
+    margin-bottom: 1.5rem;
+}
+.victory-box__text {
+    color: #818181;
+}
+.victory-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.victory-block__item {
+    width: 31.5%;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    border: 1.5px solid rgba(129, 129, 129, 0.60);
+    background: rgba(129, 129, 129, 0.20);
+    backdrop-filter: blur(20px);
+}
+.victory-block__item-title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #D4B160;
+}
+.victory-block__item-text {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #B1B1B1;
+}
+.victory-block__item-text:last-child{
+    margin-bottom: 0;
+}

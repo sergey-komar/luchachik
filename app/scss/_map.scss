@@ -1,0 +1,29 @@
+.map{
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+.map-box {
+    display: flex;
+}
+.map-box__title{
+    width: 55rem;
+    font-size: 4.1rem;
+    text-align: left;
+    color: #D4B160;
+}
+.map-box__content {
+    margin-left: 3rem;
+}
+.map-box__content-item {
+    display: block;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: #818181;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.60);
+    transition: all .4s ease-in;
+}
+.map-box__content-item:hover{
+    transition: all .4s ease-in;
+    color: #F7F7FF;
+}

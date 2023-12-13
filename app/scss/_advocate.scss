@@ -1,0 +1,277 @@
+.advocate {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+.advocate-block {
+    margin-bottom: 15rem;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(129, 129, 129, 0.40);
+    background: rgba(129, 129, 129, 0.10);
+    backdrop-filter: blur(20px);
+}
+.advocate-block__inner {
+    display: flex;
+}
+.advocate-block__content {
+    margin-left: 6rem;
+    width: 76rem;
+}
+.advocate-block__content-subtitle {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+.advocate-block__content-title {
+    margin-bottom: 4rem;
+    font-size: 4.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Playfair';
+    color: #D4B160;
+}
+.advocate-block__content-blog {
+    width: 26rem;
+    display: block;
+    margin-bottom: 2.5rem;
+    padding: 1.8rem 3rem;
+    border-radius: 10px;
+    background: linear-gradient(279deg, #D4B160 0%, #B4861D 100%);
+
+
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F7F7FF;
+    border: none;
+}
+.advocate-block__content-blog:hover{
+    background: linear-gradient(90deg, #8181811a 0%, #818181 100%);
+}
+.advocate-block__social {
+    margin-bottom: 6rem;
+    display: flex;
+    gap: 2rem;
+}
+.advocate-block__social-link {
+    width: 25rem;
+    position: relative;
+    padding: 1.8rem;
+    padding-left: 4.5rem;
+    border-radius: 10px;
+    border: 1.5px solid  #818181;
+    background: rgba(129, 129, 129, 0.05);
+    font-size: 1.8rem;
+    color: #D4B160;
+    text-align: center;
+    transition: all .4s ease-in;
+}
+.advocate-block__social-link:hover{
+    background: #D4B160;
+    color: #F7F7FF;
+    transition: all .4s ease-in;
+}
+.advocate-block__social-link.tel:hover.advocate-block__social-link::before{
+    background: url('../images/phone-solid-hover.svg') no-repeat;
+}
+.advocate-block__social-link.email:hover.advocate-block__social-link::before{
+    background: url('../images/envelope-hover.svg') no-repeat;
+}
+.advocate-block__social-link::before{
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 0;
+    transition: all .4s ease-in;
+}
+.advocate-block__social-link.tel.advocate-block__social-link::before{
+    background: url('../images/phone-solid.svg') no-repeat;
+    left: 17px;
+}
+.advocate-block__social-link.email.advocate-block__social-link::before{
+    background: url('../images/envelope.svg') no-repeat;
+    left: 4px;
+}
+.advocate-block__subtitle {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.advocate-block__info-text {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    color: #818181;
+    border-bottom: 1px solid rgba(129, 129, 129, .5);
+}
+.advocate-block__interest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.advocate-block__interest-item {
+    padding: 1.7rem 2.5rem;
+    width: 30%;
+    border-radius: 10px;
+    border: 1.5px solid rgba(129, 129, 129, 0.60);
+    background: rgba(129, 129, 129, 0.20);
+    backdrop-filter: blur(20px);
+}
+.advocate-block__interest-item img{
+    object-fit: cover;
+}
+
+
+.advocate-business {
+    width: 78rem;
+    margin: 0 auto 15rem auto;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(129, 129, 129, 0.40);
+    background: rgba(129, 129, 129, 0.10);
+    backdrop-filter: blur(20px);
+}
+.advocate-business__img {
+    margin-bottom: 4rem;
+}
+.advocate-business__link {
+    display: block;
+    width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.8rem 3rem;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(279deg, #D4B160 0%, #B4861D 100%);
+    text-transform: uppercase;
+    color: #F7F7FF;
+}
+.advocate-business__link:hover{
+    background: linear-gradient(90deg, #8181811a 0%, #818181 100%);
+}
+
+
+
+//tabs
+.advocate-education,
+.advocate-thanks {
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(129, 129, 129, 0.40);
+    background: rgba(129, 129, 129, 0.10);
+    backdrop-filter: blur(20px);
+}
+.advocate-education{
+    margin-bottom: 6rem;
+}
+.advocate-education__title,
+.advocate-thanks__title {
+    margin-bottom: 6rem;
+    font-family: 'Playfair';
+    font-size: 4.1rem;
+    font-weight: 700;
+    color: #D4B160;
+    text-align: center;
+    text-transform: uppercase;
+}
+.advocate-education__tabs,
+.advocate-thanks__tabs {
+    display: flex;
+}
+.advocate-education__inner,
+.advocate-thanks__inner{
+    margin-left: 3rem;
+}
+.advocate-education__item,
+.advocate-thanks__item{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #818181;
+    border-bottom: 1px solid rgba(129, 129, 129, .5);
+    cursor: pointer;
+}
+.advocate-education__wrapper,
+.advocate-thanks__wrapper{
+    display: flex;
+}
+.advocate-education__item--active,
+.advocate-thanks__item--active  {
+    color: #F7F7FF;
+}
+.advocate-education__item-text,
+.advocate-thanks__item-text {
+    margin-right: 5rem;
+    cursor: default;
+}
+.advocate-education__item-link,
+.advocate-thanks__item-link {
+    position: relative;
+}
+.advocate-education__item-link::before,
+.advocate-thanks__item-link::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url('../images/media/media-link.svg') no-repeat;
+    top: -5px;
+    left: -33px;
+}
+.advocate-education__content,
+.advocate-thanks__content {
+    order: -1;
+}
+.advocate-education__content-img,
+.advocate-thanks__content-img {
+    width: 45rem;
+}
+.advocate-education__content-img img,
+.advocate-thanks__content-img img{
+    width: 100%;
+    height: 30rem;
+   border-radius: 10px;
+}
+.advocate-thanks{
+    margin-bottom: 6rem;
+}
+.advocate-career,
+.advocate-gratitude {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+    border-bottom: 1px solid rgba(129, 129, 129, .5);
+}
+.advocate-gratitude{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.advocate-career__title,
+.advocate-gratituder__title {
+    font-family: 'Playfair';
+    font-size: 4.1rem;
+    font-weight: 700;
+    color: #D4B160;
+    text-transform: uppercase;
+}
+.advocate-career__content,
+.advocate-gratitude__content {
+    width: 78rem;
+}
+.advocate-career__content-title,
+.advocate-gratitude__content-title {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    text-indent: 50px;
+}
+.advocate-career__content-text,
+.advocate-gratitude__content-text {
+    margin-bottom: 4rem;
+    color: #818181;
+}
