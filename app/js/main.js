@@ -5,7 +5,43 @@ $(function () {
     $('.questions-accardion__btn-mobile').on('click', function(){
         $(this).next().slideToggle(500); 
      });
+
+
+     $('.slider-top__inner').slick({
+        // slidesToShow: 3,
+        // slidesToScroll: 1,
+        // arrows: false,
+        // dots: false,
+        // autoplay: true,
+        // autoplaySpeed: 1000,
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        arrows: false,
+         dots: false, 
+        speed: 5000, 
+        autoplay: true, 
+        autoplaySpeed: 0, 
+        cssEase: 'linear', 
+        variableWidth: true,
+   
+      });
+
+      $('.slider-bottom__inner').slick({
+        slidesToShow: 1, 
+        slidesToScroll: 1,
+        arrows: false,
+         dots: false, 
+        speed: 5000, 
+        autoplay: true, 
+        autoplaySpeed: 0, 
+        cssEase: 'linear', 
+        variableWidth: true,
+        rtl: true
+      });
 });
+
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
     const accardeonBtn = document.querySelectorAll('.questions-accardion__img');
@@ -118,7 +154,7 @@ if(tabsItem && tabsItemBtn && tabsContent){
 
 const menu = document.querySelector('.menu');
 const mobile = document.querySelector('.nav-icon');
-const navLinks = document.querySelectorAll('.menu__list a');
+
 
 mobile.addEventListener('click', function() {
     this.classList.toggle('nav-icon--active')
@@ -130,25 +166,12 @@ mobile.addEventListener('click', function() {
 
 
 
-// navLinks.forEach(item => {
-//     item.addEventListener('click', () => {
-//         document.body.classList.remove('overflow');
-//     })
-// })
-// //Обходим ссылки методом forEach
-// navLinks.forEach(function (item) {
-// //Для каждой ссылки добавляем прослушку по событию "Клик"
-//     item.addEventListener('click', function () {
-//     mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
-//     menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
-//     document.body.classList.remove('overflow');
-//     });
-// });
+
 const tabsItemEducation = document.querySelector('.advocate-education__inner');
 const tabsItemBtnEducation = document.querySelectorAll('.advocate-education__item');
 const tabsContentEducation = document.querySelectorAll('.advocate-education__content-img');
 
-function tabsHide(){
+function tabsHideEducation(){
     tabsContentEducation.forEach(item => {
         item.classList.add('hide');
         item.classList.remove('show');
@@ -158,7 +181,7 @@ function tabsHide(){
         btn.classList.remove('advocate-education__item--active');
     })
 }
-function tabsShow(i){
+function tabsShowEducation(i){
     tabsContentEducation[i].classList.add('show');
     tabsContentEducation[i].classList.remove('hide');
     tabsItemBtnEducation[i].classList.add('advocate-education__item--active');
@@ -173,16 +196,16 @@ if(tabsItemEducation && tabsItemBtnEducation && tabsContentEducation){
         if(target && target.classList.contains('advocate-education__item')){
             tabsItemBtnEducation.forEach((item, i)=>{
                 if(target == item){
-                    tabsHide();
-                    tabsShow(i);
+                    tabsHideEducation();
+                    tabsShowEducation(i);
                 }
             })
            
         }
     })
     
-    tabsHide();
-    tabsShow(0);
+    tabsHideEducation();
+    tabsShowEducation(0);
       
 }
 

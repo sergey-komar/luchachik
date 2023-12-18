@@ -9,10 +9,56 @@
     display: flex;
     gap: 4rem;
 }
-
-.menu__list-link {
+.menu__list li a{
     font-size: 1.4rem;
     text-transform: uppercase;
+}
+.menu__list li{
+    position: relative;
+}
+.menu__list li:nth-child(1)::after,
+.menu__list li:nth-child(4)::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 10px;
+    background: url('../images/home/nav-link.svg') no-repeat;
+    top: 5px;
+    right: -21px;
+    cursor: pointer;
+}
+
+.sub-menu{
+    position: absolute;
+    display: none;
+    width: 20.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+    border: 1.5px solid rgba(129, 129, 129, 0.60);
+    background: rgba(129, 129, 129, 0.20);
+    backdrop-filter: blur(20px);
+    z-index: 9;
+}
+.menu__list li:nth-child(1):hover .sub-menu,
+.menu__list li:nth-child(4):hover .sub-menu{
+    display: block;
+}
+.menu__list li .sub-menu li:nth-child(1)::after,
+.menu__list li .sub-menu li:nth-child(4)::after{
+    display: none;
+}
+.sub-menu li{
+    padding: 1.5rem 2rem;
+}
+.sub-menu li a{
+    display: block;
+    transition: all .4s ease-in;
+}
+.sub-menu li a:hover{
+    color: #D4B160;
+    transition: all .4s ease-in;
 }
 .menu__list-link--active {
     color: #D4B160;

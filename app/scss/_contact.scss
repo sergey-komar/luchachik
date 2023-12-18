@@ -83,7 +83,7 @@
     min-width: 20px;
     height: 20px;
     border-radius: 4px;
-    border: 1px solid var(--Secondary-Color-1, #818181);
+    border: 1px solid  #818181;
     background: rgba(129, 129, 129, 0.00);
 }
 .contact-block__custom-checkbox::before{
@@ -99,6 +99,7 @@
 }
 .contact-block__form-checkbox:checked+.contact-block__custom-checkbox::before{
     transform: translate(-50%, -50%) scale(1);
+    background-color: #D4B160;
 }
 .contact-block__form-btn {
     width: 36rem;
